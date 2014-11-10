@@ -22,6 +22,9 @@ Form.editors.Text = Form.Editor.extend({
     'select':   function(event) {
       this.trigger('select', this);
     },
+    'paste':   function(event) {
+      this.trigger('change', this);
+    },
     'focus':    function(event) {
       this.trigger('focus', this);
     },
